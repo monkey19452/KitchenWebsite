@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+{% if tytul  %}  
+<title>{{tytul}}</title>
+{% else %}
+<title>Strona Główna</title>
+{% endif %}
+</head>
+
+<body>
+
+{% extends "baza.html" %}
+
+{% block content %}
+<h1>{{tytul}}</h1>
+<h2>{{tresc}}</h2>
+<br><br>
+<center>
+<img src="https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill,d_placeholder_epicurious.png,fl_progressive,g_face,h_450,q_80,w_800/v1602619590/epicurious_4-levels-4-levels-of-gumbo-amateur-to-food-scientist.jpg" alt="Jambalaya">
+</center>
+<h3>
+Bon Apetit!
+</h3>
+
+{% if current_user.is_authenticated %}
+Jesteś zalogowany jako: <b>{{ current_user.username }}</b>.
+<br>
+
+{% else %}
+<p class="lead">{{tresc}}<br>Założ konto, by korzystać z bloga!</p>
+{% endif %}
+
+
+
+{% endblock %}
+
+</body>
+</html>

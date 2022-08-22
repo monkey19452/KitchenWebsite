@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+{% if tytul  %}  
+<title>{{tytul}}</title>
+{% else %}
+<title>Strona Główna</title>
+{% endif %}
+</head>
+
+<body>
+
+{% extends "baza.html" %}
+
+{% block content %}
+<h1>{{tytul}}</h1>
+<p class="lead">{{tresc}}<br>Ktoś już użył tego maila!</p>
+<p>Wymyśl coś innego.</p>
+
+
+
+ 
+    <br>
+   <p><a href= "\login">Powrót do strony logowania</a></p>
+   <p><a href= "\register">Zarejestruj się</a></p>
+   <p><a href= "\">Powrót do strony głównej</a></p>
+
+
+
+{% endblock %}
+
+</body>
+</html>

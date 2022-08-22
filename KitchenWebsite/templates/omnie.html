@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+{% if tytul  %}  
+<title>{{tytul}}</title>
+{% else %}
+<title>Strona Główna</title>
+{% endif %}
+</head>
+
+<body>
+
+{% extends "baza.html" %}
+
+{% block content %}
+<h1>{{tytul}}</h1>
+
+
+{% if current_user.is_authenticated %}
+<p class="lead">{{tresc}}<b> {{ current_user.username }}. </b>Miło Cię widzieć.<br>Nazywam się Artur.<br> Przepisy pochodza ze strony: <br>https://www.karointhekitchen.com</p>
+<br>
+
+{% else %}
+<p class="lead">Miło Cię widzieć.<br>Zaloguj się, żeby korzystać z bloga!<br>Nazywam się Artur.<br> Przepisy pochodza ze strony: <br>https://www.karointhekitchen.com</p>
+{% endif %}
+
+
+
+
+
+<p><br><br><a href= "\">Powrót do strony głównej</a></p>
+{% endblock %}
+
+</body>
+</html>

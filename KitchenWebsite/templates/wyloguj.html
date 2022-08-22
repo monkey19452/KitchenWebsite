@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% if tytul  %}  
+<title>{{tytul}}</title>
+{% else %}
+<title>Strona Główna</title>
+{% endif %}
+</head>
+<body>
+{% extends "baza.html" %}
+{% block content %}
+<h1>{{tytul}}</h1>
+<p class="lead">{{tresc}}</p>
+  
+  
+ 
+<div class="starter-template">
+<p class="lead">Możesz zamknąć przeglądarkę.</p> 
+</div>
+<p><a href= "\">Powrót do strony głównej</a></p>
+  
+{% endblock %}
+
+</body>
+</html>

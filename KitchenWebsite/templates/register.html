@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% if tytul  %}  
+<title>{{tytul}}</title>
+{% else %}
+<title>Strona Główna</title>
+{% endif %}
+</head>
+<body>
+{% extends "baza.html" %}
+{% block content %}
+<h1>{{tytul}}</h1>
+<p class="lead">{{tresc}}</p>
+  
+  
+<form action="" method = "POST">
+    <p>Wprowadź dane:</p> <br> 
+      
+    <label for="fname"> Adres e-mail </label><br>
+    <input type = "email" name = "email" /><br>
+    <label for="fname"> Login </label><br>
+    <input type = "text" name = "username" /><br>
+    <label for="fname"> Hasło </label><br>
+    <input type = "password" name = "password" /><br><br>
+    <input type = "submit" value = "Zarejestruj!" /><br>
+</form>
+<br>
+
+
+
+
+
+
+
+
+ 
+<h3>Posiadasz już konto?</h3>
+<h3><a href ="{{url_for('login')}}">Zaloguj się</a></h3>
+  
+{% endblock %}
+<p><br><br><a href= "\">Powrót do strony głównej</a></p>
+</body>
+</html>
+
+ 

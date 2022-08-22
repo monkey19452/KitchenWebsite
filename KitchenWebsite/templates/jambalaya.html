@@ -1,0 +1,123 @@
+<!-- todo/templates/zadania_lista.html -->
+<html>
+ <head>
+{% if tytul  %}  
+<title>{{tytul}}</title>
+{% else %}
+<title>Strona Główna</title>
+{% endif %}
+
+
+
+</head>
+  <body>
+{% extends "baza.html" %}
+
+{% block content %}
+    
+<h1>  
+{{tytul}}
+</h1>
+<h2>  
+{{tresc}}
+</h2>
+
+<br><br>
+
+<p>
+Kuchnia Stanów Zjednoczonych to nie tylko hamburgery. To przede wszystkim kuchnia napływowych mieszkańców Nowego Świata. Warto co jakiś czas się w nią zagłębić. Jak w miskę gumbo czy tej pysznej, prostej kreolskiej jambalayi. 
+</p>
+<br>
+<center>
+<img src="https://www.karointhekitchen.com/wp-content/uploads/2015/11/jambalaya_przepis1.jpg" alt="Jambalaya">
+</center>
+
+<br><br>
+
+<p>
+Kreole to potomkowie imigrantów z Francji i Półwyspu Iberyjskiego. Osiedlali się głównie w południowych stanach USA, szczególnie w Luizjanie. Razem ze sobą przywieźli swoje potrawy, które ze względu na zróżnicowanie produktów jak i samych gotujących – ewoluowały w nowe dania z europejskim rodowodem.
+Jambalayi najbliżej jest do hiszpańskiej paelli – to mieszanka mięs i owoców morza, ryżu, bulionu i pomidorów, oparta na cajuńskiej (pochodzącej od osadników francuskich) duszonej ‘świętej trójcy’ – cebuli, słodkiej papryce i selerze naciowym. Przy szykowaniu jambalayi trochę jak z gumbo – wrzucało się takie mięso, jakie było akurat pod ręką. W zależności od pory roku był to albo kurczak, królik, albo świeżo upolowane na bagnach aligatory, nutrie, żółwie czy nawet wiewiórki. Z owoców morza w jambalayi najpopularniejsze są do dziś krewetki, małże i mięso kraba. Kiełbasa francuska andouille jest w Polsce nie do zdobycia, ale z naszą różnorodnością wędlin spokojnie do jambalayi nada się grubo mielona, dobra śląska kiełbasa wędzona. Z zastrzeżeniem – raczej nie za mocno czosnkowa i nie za sucha.
+UWAGA! Jambalayi nie robi się tak samo jak gumbo, na ciemnej zasmażce – jej bazą smakową jest “trójca” cebuli, papryki i selera naciowego, smażona tak samo jak włoskie czy hiszpańskie sofrito.
+</p>
+
+<br><br>
+
+<center>
+<img src="https://www.karointhekitchen.com/wp-content/uploads/2015/11/jambalaya_przepis2.jpg" alt="Jambalaya">
+</center>
+
+<br><br>
+<p>
+Szykujemy najpierw wszystkie składniki. Papryki myjemy, pozbawiamy je gniazd nasiennych, kroimy w dwucentymetrowe kawałki. Cebule obieramy i kroimy drobno, dodajemy do miski z papryką. Myjemy i obieramy z łyka gałązki selera naciowego, kroimy je w półcentymetrowe plasterki, dodajemy do papryki i cebuli. Ząbki czosnku przeciskamy przez praskę, dodajemy do warzyw.
+Krewetki odmrażamy na sicie pod bieżącą wodą, nie bardzo ciepłą, pozbawiamy je resztek pancerzyka i ogonków, następnie kroimy je wzdłuż na połowy. Jeśli krewetki były świeże – oczyszczamy je z pancerzyków, przewodów pokarmowych i kroimy tak samo. Parzymy na sicie wrzątkiem.
+</p>
+
+<br><br>
+<img src="https://www.karointhekitchen.com/wp-content/uploads/2015/11/jambalaya_przepis4.jpg" alt="Jambalaya">
+<br><br>
+
+<p>
+Podgrzewamy bulion lub rozpuszczamy jedną kostkę bulionu wołowego w 0,5 litra wrzącej wody. Kurczaka pozbawiamy błonek i kroimy w 1,5cm kostkę. Kiełbasy kroimy w cienkie plasterki. Szykujemy mieszankę przypraw – jak sama nazwa wskazuje wystarczy tylko podane przyprawy wymieszać 😉 2-3 płaskie łyżeczki kreolskiej mieszanki wcieramy w mięso kurczaka. Resztę zostawiamy na później.
+</p>
+
+<br><br>
+<center>
+<img src="https://www.karointhekitchen.com/wp-content/uploads/2015/11/jambalaya_przepis3.jpg" alt="Jambalaya">
+</center>
+
+
+<br><br>
+<p>
+W dużym rondlu rozgrzewamy na średnim ogniu łyżkę smalcu i 2 łyżki oleju. Na skwierczący tłuszcz wrzucamy kiełbasę. Podsmażamy kiełbasę mieszając, do mocnego zrumienienia z obu stron, około 7 minut. Wyjmujemy skarmelizowaną kiełbasę, zostawiamy tłuszcz. Na tłuszcz wrzucamy mięso kurczaka i zamykamy je z obu stron, mieszając i smażąc około 5 minut. Nie trzeba go smażyć do końca, dojdzie do pożądanego stanu podczas duszenia całości. Kurczaka z rondla wyjmujemy, dodajemy go do usmażonej kiełbasy.
+W rondlu znowu rozgrzewamy pozostały tłuszcz, wrzucamy pokrojone cebule, seler naciowy i papryki. Całość smażymy na średnim ogniu, mieszając co jakiś czas, około 7-8 minut, aż warzywa ładnie się zeszklą i widocznie zmiękną. Do warzyw dodajemy podsmażoną wcześniej kiełbasę, kurczaka, wlewamy całą zawartość puszki pomidorów (jeśli są w całości – rozdrobnijcie je w dłoni), dodajemy pozostałą kreolską mieszankę przypraw, wlewamy bulion.
+Całość dokładnie razem mieszamy i wsypujemy surowy ryż. Mieszamy dokładnie i stawiamy rondel na małym ogniu. Potrawa ma tylko powoli pyrkać i się dusić, a w tym czasie ryż zrobi się miękki i wchłonie większość płynu. Mieszamy co jakiś czas, żeby ryż nie przywarł do dna. Takie duszenie zajmie około 30-35 minut – sprawdźcie po 25 minutach czy ryż już miękki, jeśli nie – duście jeszcze chwilę. Gdy już prawie gotowe, dodajemy do smaku ostry sos z papryczek chili, na wierzch wsypujemy przygotowane wcześniej krewetki, mieszamy całość i dajemy jej jeszcze 5 minut poddusić się pod przykryciem. Podajemy jambalayę w miseczkach, posypaną grubo skrojoną zieleniną.
+</p>
+
+<br><br> 
+<center>
+<img src="https://www.karointhekitchen.com/wp-content/uploads/2015/11/jambalaya_przepis5.jpg" alt="Jambalaya">
+</center>
+<br><br> 
+
+<h3>SKŁADNIKI </h3>
+
+<ul style="color: red">
+<li><span style="color: black">1 duża pierś z kurczaka z ‘polędwiczką’, ok. 350g </span></li>
+<li><span style="color: black">200g średnich krewetek </span></li>
+<li><span style="color: black">2-3 dobre, grubo mielone i wędzone kiełbasy wieprzowe, ok. 350g </span></li>
+<li><span style="color: black">4 gałązki selera naciowego – ok.250g </span></li>
+<li><span style="color: black">2-3 cebule (białe, czerwone, szalotki) – ok.200g </span></li>
+<li><span style="color: black">3 papryki okrągłe (zielone, żółte, czerwone) ok. 500g </span></li>
+<li><span style="color: black">1 puszka pomidorów w zalewie, bez skórki, całych lub krojonych </span></li>
+<li><span style="color: black">3-4 średnie ząbki czosnku </span></li>
+<li><span style="color: black">1 łyżka smalcu </span></li>
+<li><span style="color: black">5 łyżek oleju rzepakowego lub słonecznikowego </span></li>
+<li><span style="color: black">2-3 łyżeczki ostrego sosu chili – Sriracha lub Tabasco </span></li>
+<li><span style="color: black">0,5 litra bulionu wołowego, może być z kostki BIO (1 kostka na 0,5l wody) </span></li>
+<li><span style="color: black">1 i 1/3 szklanki ryżu, użyłam długoziarnistego, ale może być i zwykły biały lub brązowy (pamiętajcie, że on będzie gotował się dłużej) </span></li>
+<li><span style="color: black">pietruszka, szczypior gruby lub kolendra do podania </span></li>
+<li><span style="color: black">mieszanka kreolska </span></li>
+
+</ul>
+<br>
+<h3>SKŁADNIKI KREOLSKIEJ MIESZANKI PRZYPRAW </h3>
+
+<ul style="color: red">
+<li><span style="color: black">2,5 łyżki mielonej papryki </span></li>
+<li><span style="color: black">2 łyżki soli </span></li>
+<li><span style="color: black">2 łyżki czosnku granulowanego </span></li>
+<li><span style="color: black">1 łyżka mielonego czarnego pieprzu </span></li>
+<li><span style="color: black">1 łyżka granulowanej cebuli </span></li>
+<li><span style="color: black">1 łyżka pieprzu cayenne </span></li>
+<li><span style="color: black">1 łyżka suszonego tymianku </span></li>
+<li><span style="color: black">1 łyżka oregano </span></li>
+</ul>
+
+
+ 
+
+
+<p><br><br><a href= "\">Powrót do strony głównej</a></p>
+{% endblock %}
+  </body>
+</html>

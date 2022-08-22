@@ -1,0 +1,86 @@
+<!-- todo/templates/zadania_lista.html -->
+<html>
+ <head>
+{% if tytul  %}  
+<title>{{tytul}}</title>
+{% else %}
+<title>Strona Główna</title>
+{% endif %}
+
+<style type="text/css">
+table {
+  
+  border-collapse: collapse;
+  width: 88%; 
+  background-color:white; 
+  border-color:#6699FF;
+}
+
+
+
+td {
+  padding: 5px; 
+  text-align: center;
+  border-bottom: 2px solid :silver; 
+  color: black;
+  font-size: 14px;
+  font-family: Arial;
+ 
+}
+
+tr:hover {
+background-color: #00CCFF;
+
+ 
+
+}
+</style>
+
+
+</head>
+  <body>
+  {% extends "baza.html" %}
+
+{% block content %}
+    <h1>Blog</h1>
+    <p>Rozmowy na każdy temat</p>
+    
+    <p>Komentujesz jako {{current_user.username}}</p>
+    <!-- formularz dodawania komentarzy -->
+    <form class="add-form" method="POST" action="{{ url_for('zadania') }}">
+      <input name="zadanie" value="">
+      </input>
+      <button type="submit">Dodaj</button>
+    </form>
+    
+
+    <!-- informacje o sukcesie lub błędzie -->
+    <p>
+      {% if error %}
+        <strong class="error">Błąd: {{ error }}</strong>
+      {% endif %}
+
+      {% for message in get_flashed_messages() %}
+        <strong class="success">{{ message }}</strong>
+      {% endfor %}
+    </p>
+    
+    <table border= 2>
+
+
+{% for zadanie in zadania %}
+
+<tr>
+<td><br> <b>Dnia {{zadanie["data_pub"]}} <br>Użytkownik {{zadanie["zrobione"]}} napisał:</b></td>
+<td>{{zadanie["zadanie"]}}</td>
+</tr>
+
+{% endfor %}
+</table>
+    
+{% endblock %}
+
+<p><br><br><a href= "\">Powrót do strony głównej</a></p>
+
+  </body>
+</html>
